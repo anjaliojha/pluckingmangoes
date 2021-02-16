@@ -12,9 +12,9 @@ class Mango
 		this.x=x;
 		this.y=y;
 		
-		this.body=Bodies.rect(x, y, 10,10);
+		this.body=Bodies.rectangle(x, y, 10,10);
 		World.add(world, this.body);
-		this.image = loadImage("mango.png");
+		this.image = loadImage("Pluckingmangoes/mango.png");
 
 	}
 	display()
@@ -23,7 +23,7 @@ class Mango
 			var mangopos=this.body.position;		
 
 			push()
-			translate(mangopos.x, treepos.y);
+			translate(mangopos.x, mangopos.y);
 			imageMode(CENTER)
 			//strokeWeight(3);
 			//fill("red")

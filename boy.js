@@ -12,9 +12,9 @@ class Boy
 		this.x=x;
 		this.y=y;
 		
-		this.body=Bodies.rect(x, y, 10,10);
+		this.body=Bodies.rectangle(x, y, 10,10);
 		World.add(world, this.body);
-		this.image = loadImage("boy.png");
+		this.image = loadImage("Pluckingmangoes/boy.png");
 
 	}
 	display()

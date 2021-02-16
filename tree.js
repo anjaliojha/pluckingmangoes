@@ -12,9 +12,9 @@ class Tree
 		this.x=x;
 		this.y=y;
 		
-		this.body=Bodies.rect(x, y, 10,10);
+		this.body=Bodies.rectangle(x, y, 10,10);
 		World.add(world, this.body);
-		this.image = loadImage("tree.png");
+		this.image = loadImage("Pluckingmangoes/tree.png");
 
 	}
 	display()

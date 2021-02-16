@@ -5,7 +5,8 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
 var boy, stone, tree
-var mango1, mango2, mango3, mango3, mango4, mango5, mango6
+var mango1, mango2, mango3, mango3, mango4, mango5, mango6;
+
 function preload()
 {
 	
@@ -18,9 +19,10 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	boy = new boy(200,100,70,70);
+	boy = new Boy(200,100,70,70);
 	stone = new Stone(180,80,70,70);
 	tree = new Tree(300,100,70,70);
+
 	mango1 = new Mango(310,100,70,70);
 	mango2 = new Mango(290,110,70,70);
 	mango3 = new Mango(270,120,70,70);
@@ -36,14 +38,16 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+
+  background(255);
+  
   boy.display();
   stone.display();
-  tree.diplay();
+  tree.display();
   mango1.display();
-  mango2.diplay();
-  mango3.diplay();
-  mango4.diplay();
+  mango2.display();
+  mango3.display();
+  mango4.display();
   
   drawSprites();
  

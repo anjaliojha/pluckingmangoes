@@ -13,9 +13,9 @@ class Stone
 		this.x=x;
 		this.y=y;
 		
-		this.body=Bodies.rect(x, y, 10,10);
+		this.body=Bodies.rectangle(x, y, 10,10);
 		World.add(world, this.body);
-		this.image = loadImage("stone.png");
+		this.image = loadImage("Pluckingmangoes/stone.png");
 
 	}
 	display()
